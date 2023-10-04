@@ -1,3 +1,4 @@
+#Lab Report 1
 !['cd' #1,2,3](https://github.com/ethankook/cse15l-lab-reports/blob/main/Screenshot%202023-10-03%20at%2011.13.56%20AM.png)
 1. The working directory is the home directory. 'cd' switches the current working directory, and because there was no argument, there was no output or change in directory. This is not an error.
 2. The working directory is still the home directory. There was no ouput because the 'cd' command only changes the directory, and this time, a proper argument was given. This is not an error.
