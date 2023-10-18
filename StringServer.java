@@ -2,21 +2,29 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    List l = new ArrayList();
+    List<String> str = new ArrayList<String>();
+    String out = "";
+    int count = 1;
   
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Number: %d", num);
-        } else if (url.getPath().equals("/increment")) {
-            num += 1;
-            return String.format("Number incremented!");
-        } else {
+            out = "";
+            for(int i=0;i<str.length;i++){
+                        out += Integer.toString(count) + ". " + str[i] +\n;
+                        count++;
+            return out;
+        } 
+        } else if{
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
-                    num += Integer.parseInt(parameters[1]);
-                    return String.format("Number increased by %s! It's now %d", parameters[1], num);
+                    str.add(String.format(parameters[1]);
+                    for(int i=0;i<str.length;i++){
+                        out += Integer.toString(count) + ". " + str[i] +\n;
+                        count++;
+                    }
+                    return out;
                 }
             }
             return "404 Not Found!";
