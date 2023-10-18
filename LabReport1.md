@@ -9,7 +9,7 @@
 ![`ls` #1,2,3](ls1.png)
 1. The working directory is the home directory. Because the `ls` command displays the files and folders in the given path and no argument was given, the output is the only available folder in the home directory, which was lecture1. This is not an error. 
 2. The working directory is still the home directory. The `ls` command displays the files and folders in the given path, which was the `/lecture1` directory, so the outputs, Hello.class, Hello.java, messages, and README were all files/ folders in the `/lecture1` directory. This is not an error.
-3. The working directory is still the home directory, because the `ls` command does not change it. When using the `ls` command, giving a file as the argument displays information about the file depending on the request options. Because the argument I gave was a file and no extra information was requested, the only path was the output for the file. This is not an error.
+3. The working directory is still the home directory, because the `ls` command does not change it. When using the `ls` command, giving a file as the argument displays information about the file depending on the request options. Because the argument I gave was a file and no extra information was requested, the only output was the path of the file. This is not an error.
 
 ![`cat` #1](cat1.png)
 
