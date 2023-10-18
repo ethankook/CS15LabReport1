@@ -11,7 +11,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/")) {
             out = "";
             for(int i=0;i<str.length;i++){
-                        out += Integer.toString(count) + ". " + str[i] +\n;
+                        out += Integer.toString(count) + ". " + str[i] + "\n";
                         count++;
             return out;
         } 
@@ -21,7 +21,7 @@ class Handler implements URLHandler {
                 if (parameters[0].equals("s")) {
                     str.add(String.format(parameters[1]);
                     for(int i=0;i<str.length;i++){
-                        out += Integer.toString(count) + ". " + str[i] +\n;
+                        out += Integer.toString(count) + ". " + str[i] + "\n";
                         count++;
                     }
                     return out;
